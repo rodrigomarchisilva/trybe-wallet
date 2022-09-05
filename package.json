@@ -2,6 +2,7 @@
   "name": "trybewallet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rodrigomarchisilva.github.io/trybe-wallet",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -23,6 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
@@ -52,6 +55,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.1",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   }
 }
