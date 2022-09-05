@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Grid, Typography } from '@mui/material';
 import { GiWallet } from 'react-icons/gi';
 import IconGradient from '../../basic-components/IconGradient';
-import staticData from './staticData';
-const { header, logo, user, amount } = staticData;
+import { header, logo, user, amount } from './staticData';
 
 class Header extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { currency: 'BRL' };
 
     this.getTotal = this.getTotal.bind(this);
   }
 
   getTotal() {
     const { expenses } = this.props;
-
+    const real = { style: 'currency', currency: 'BRL' };
     let output = 0;
 
     if (expenses.length > 0) {
@@ -26,10 +23,7 @@ class Header extends Component {
         .map(({ value, currency, exchangeRates }) => value * exchangeRates[currency].ask)
         .reduce((amount, index) => amount + index);
     }
-    output = new Intl.NumberFormat([], {
-      style: 'currency',
-      currency: 'BRL'
-    }).format(output);
+    output = new Intl.NumberFormat([], real).format(output);
 
     return output;
   }
@@ -37,11 +31,8 @@ class Header extends Component {
   render() {
     const {
       getTotal,
-      state: { currency },
       props: { email }
     } = this;
-
-    const total = getTotal();
 
     return (
       <header>
@@ -52,11 +43,11 @@ class Header extends Component {
             <Typography {...logo.typo.props}>{logo.typo.innerText}</Typography>
           </Grid>
           <Grid {...user.grid.props}>
-            <Typography {...user.typo.props}>{email || user.typo.innerText}</Typography>
+            <Typography {...user.typo.props}>{email || user.typo.fillerText}</Typography>
           </Grid>
           <Grid {...amount.grid.props}>
-            <Typography {...amount.total.props}>{total}</Typography>
-            <Typography {...amount.currency.props}>{currency}</Typography>
+            <Typography {...amount.total.props}>{getTotal()}</Typography>
+            <Typography {...amount.currency.props}>{amount.currency.innerText}</Typography>
           </Grid>
         </Grid>
       </header>

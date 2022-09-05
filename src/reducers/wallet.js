@@ -14,7 +14,7 @@ const INITIAL_STATE = {
   mode: { name: 'create', id: undefined },
   form: {
     value: 1,
-    description: 'Example',
+    description: 'Exemplo',
     currency: 'USD',
     method: 'Dinheiro',
     tag: 'Alimentação'

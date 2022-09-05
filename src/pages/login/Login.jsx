@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -7,8 +7,7 @@ import { Box, Button, TextField, Typography } from '@mui/material';
 import { Stack } from '@mui/system';
 import { GiWallet } from 'react-icons/gi';
 import IconGradient from '../../basic-components/IconGradient';
-import staticData from './staticData';
-const { page, logo, form } = staticData;
+import { page, logo, form } from './staticData';
 
 class Login extends Component {
   constructor(props) {
@@ -54,24 +53,25 @@ class Login extends Component {
       handleChange
     } = this;
 
-    const classData = {
-      formProps: {
-        onSubmit: handleSubmit
-      },
-      emailInputProps: {
-        ...form.inputs.email.props,
-        value: email,
-        onChange: ({ target }) => handleChange(target, 'email'),
-        error: validate && !emailIsValid,
-        helperText: validate && !emailIsValid ? form.inputs.email.helperText : ''
-      },
-      passwordInputProps: {
-        ...form.inputs.password.props,
-        value: password,
-        onChange: ({ target }) => handleChange(target, 'password'),
-        error: validate && !passwordIsValid,
-        helperText: validate && !passwordIsValid ? form.inputs.password.helperText : ''
-      }
+    const formProps = {
+      onSubmit: handleSubmit,
+      noValidate: true
+    };
+
+    const emailInputProps = {
+      ...form.inputs.email.props,
+      value: email,
+      onChange: ({ target }) => handleChange(target, 'email'),
+      error: validate && !emailIsValid,
+      helperText: validate && !emailIsValid ? form.inputs.email.helperText : ''
+    };
+
+    const passwordInputProps = {
+      ...form.inputs.password.props,
+      value: password,
+      onChange: ({ target }) => handleChange(target, 'password'),
+      error: validate && !passwordIsValid,
+      helperText: validate && !passwordIsValid ? form.inputs.password.helperText : ''
     };
 
     if (redirect) return <Navigate to="/carteira" />;
@@ -80,14 +80,14 @@ class Login extends Component {
       <Box {...page.box.props}>
         <IconGradient {...logo.svg.props} />
         <Box {...form.box.props}>
-          <form {...classData.formProps}>
+          <form {...formProps}>
             <Box {...logo.box.props}>
               <GiWallet {...logo.icon.props} />
               <Typography {...logo.heading.props}>{logo.heading.innerText}</Typography>
             </Box>
             <Stack {...form.stack.props}>
-              <TextField {...classData.emailInputProps} />
-              <TextField {...classData.passwordInputProps} />
+              <TextField {...emailInputProps} />
+              <TextField {...passwordInputProps} />
               <Button {...form.button.props}>{form.button.innerText}</Button>
             </Stack>
           </form>
