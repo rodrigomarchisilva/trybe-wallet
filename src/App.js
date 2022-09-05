@@ -1,8 +1,9 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Login from './pages/login/Login';
 import Wallet from './pages/wallet/Wallet';
-import './App.css';
+import { grey } from '@mui/material/colors';
+
+document.body.style.backgroundColor = grey[300];
 
 export default function App() {
   return (
