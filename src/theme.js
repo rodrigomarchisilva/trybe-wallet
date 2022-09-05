@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import { amber, grey, indigo, red } from '@mui/material/colors';
 
-const theme = createTheme({
+export default createTheme({
   palette: {
     primary: { main: grey[500] },
     secondary: { main: grey[900] },
@@ -9,7 +9,15 @@ const theme = createTheme({
     success: { main: indigo[500] },
     warning: { main: amber[500] },
     info: { main: grey[50] }
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      ms: 480,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536
+    }
   }
 });
-
-export default theme;
