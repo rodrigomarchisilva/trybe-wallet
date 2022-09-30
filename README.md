@@ -225,7 +225,7 @@
   **1.** Clone o repositório:
 
   ~~~bash
-    git clone
+    git clone git@github.com:rodrigomarchisilva/trybe-wallet.git
   ~~~
 
   **2.** Abra o projeto:
