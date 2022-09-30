@@ -1,52 +1,57 @@
 <!-- markdownlint-disable MD004 MD007 MD048 MD033-->
-# Wallet (carteira)
+# :moneybag: Wallet (carteira)
 
-## Content (conteúdo)
+## :open_book: Content (conteúdo)
 
-- [Wallet (carteira)](#wallet-carteira)
-  - [Content (conteúdo)](#content-conteúdo)
-  - [Deploy link (link do deploy)](#deploy-link-link-do-deploy)
-  - [Routes (rotas)](#routes-rotas)
-  - [Environment (ambiente)](#environment-ambiente)
-  - [English](#english)
-    - [Project info](#project-info)
-    - [Cloning the project and opening it on VSCode](#cloning-the-project-and-opening-it-on-vscode)
-    - [How to run it locally](#how-to-run-it-locally)
-    - [How to run it through docker](#how-to-run-it-through-docker)
-    - [How to run it through docker-compose](#how-to-run-it-through-docker-compose)
-    - [Login](#login)
-    - [Create, update and delete an expense](#create-update-and-delete-an-expense)
-    - [Responsiveness](#responsiveness)
-  - [Português](#português)
-    - [Informações do projeto](#informações-do-projeto)
-    - [Clonando o projeto e abrindo no VSCode](#clonando-o-projeto-e-abrindo-no-vscode)
-    - [Como rodar localmente](#como-rodar-localmente)
-    - [Como rodar através do docker](#como-rodar-através-do-docker)
-    - [Como rodar através do docker-compose](#como-rodar-através-do-docker-compose)
-    - [Entrar](#entrar)
-    - [Criar, editar e excluir despesas](#criar-editar-e-excluir-despesas)
-    - [Responsividade](#responsividade)
+- [:moneybag: Wallet (carteira)](#moneybag-wallet-carteira)
+  - [:open_book: Content (conteúdo)](#open_book-content-conteúdo)
+  - [:us: English](#us-english)
+    - [:desktop_computer: Deploy link](#desktop_computer-deploy-link)
+    - [:motorway: Routes](#motorway-routes)
+    - [:deciduous_tree: Development environment](#deciduous_tree-development-environment)
+    - [:information_source: Project info](#information_source-project-info)
+    - [:printer: Cloning the project and opening it on VSCode](#printer-cloning-the-project-and-opening-it-on-vscode)
+    - [:computer: How to run it locally](#computer-how-to-run-it-locally)
+    - [:whale2: How to run it through docker](#whale2-how-to-run-it-through-docker)
+    - [:whale: How to run it through docker-compose](#whale-how-to-run-it-through-docker-compose)
+    - [:door: Login](#door-login)
+    - [:man_technologist: Create, update and delete an expense](#man_technologist-create-update-and-delete-an-expense)
+    - [:iphone: Responsiveness](#iphone-responsiveness)
+  - [:brazil: Português](#brazil-português)
+    - [:desktop_computer: Link do deploy](#desktop_computer-link-do-deploy)
+    - [:motorway: Rotas](#motorway-rotas)
+    - [:deciduous_tree: Ambiente de desenvolvimento](#deciduous_tree-ambiente-de-desenvolvimento)
+    - [:information_source: Informações do projeto](#information_source-informações-do-projeto)
+    - [:printer: Clonando o projeto e abrindo no VSCode](#printer-clonando-o-projeto-e-abrindo-no-vscode)
+    - [:computer: Como rodar localmente](#computer-como-rodar-localmente)
+    - [:whale2: Como rodar através do docker](#whale2-como-rodar-através-do-docker)
+    - [:whale: Como rodar através do docker-compose](#whale-como-rodar-através-do-docker-compose)
+    - [:door: Entrar](#door-entrar)
+    - [:man_technologist: Criar, editar e excluir despesas](#man_technologist-criar-editar-e-excluir-despesas)
+    - [:iphone: Responsividade](#iphone-responsividade)
 
-## Deploy link (link do deploy)
+## :us: English
+
+### :desktop_computer: Deploy link
 
 [https://rodrigomarchisilva.github.io/trybe-wallet/](https://rodrigomarchisilva.github.io/trybe-wallet/)
 
-## Routes (rotas)
+### :motorway: Routes
 
-- `/` - Login page (página de login)
-- `/carteira` - Wallet page (página da carteira)
+> HashRouter has been used because of gh-pages limitations.
 
-## Environment (ambiente)
+- `/` - Login page;
+- `/#/carteira` - Wallet page.
 
-| Tool (ferramenta) | Version (versão) |
+### :deciduous_tree: Development environment
+
+| Tool | Version |
 | ----------- | ------- |
 | [Node](https://nodejs.org/en/) | 18.8.0 |
 | [Docker](https://www.docker.com/) | 20.10.12 |
 | [Docker Compose](https://docs.docker.com/compose/) | 1.29.2 |
 
-## English
-
-### Project info
+### :information_source: Project info
 
 * **Why I did this project:** This project is from [Trybe](https://www.betrybe.com/)'s course, Module 2 - Front-end Development;
 * **Core Technologies:** React (w/ class components), Redux, Material UI;
@@ -56,7 +61,7 @@
 * **My approach to learning through projects:** I always try to do things for the first time without using external references, e.g. Stack Overflow, ready to use designs and so on. I only use them when I'm stuck and can't find a solution on my own. I believe that doing this when I'm only practicing, increases my creativity. That's why some of my projects might not follow well stablished patterns of code and design;
 * **Commit history:** It might be a bit messy or compromised in some projects, either because I had to migrate the project to a new repository, or because I was still in the learning process and didn't know how to use Git properly. I'm still learning, but I already improved a lot.
 
-### Cloning the project and opening it on VSCode
+### :printer: Cloning the project and opening it on VSCode
 
   **Prerequisites:** You need to have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your computer;
 
@@ -88,7 +93,7 @@
     code .
   ~~~
 
-### How to run it locally
+### :computer: How to run it locally
 
   **1.** Install the dependencies:
 
@@ -102,7 +107,7 @@
     npm start
   ~~~
 
-### How to run it through docker
+### :whale2: How to run it through docker
 
   **1.** Make sure you have Docker installed and running:
 
@@ -126,7 +131,7 @@
     docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm trybe-wallet
   ~~~
 
-### How to run it through docker-compose
+### :whale: How to run it through docker-compose
 
   **1.** Make sure you have Docker installed and running:
 
@@ -160,14 +165,14 @@
     npm run compose:down
   ~~~
 
-### Login
+### :door: Login
 
 ![Login](/gifs/wallet-login.gif)
 
   * **Email:** As it doesn't have a back-end, the email could be anything, as long as it follows the standard email pattern;
   * **Password:** The password must have at least 6 digits.
 
-### Create, update and delete an expense
+### :man_technologist: Create, update and delete an expense
 
 ![Create, update and delete an expense](/gifs/wallet-cud.gif)
 
@@ -176,15 +181,34 @@
   * **Delete:** To delete an expense, you must click on the "Excluir despesa" button;
   * **Exchange Rates:** The exchange rates are fetched from AwesomeAPI's [Exchange Rates API](https://docs.awesomeapi.com.br/api-de-moedas).
 
-### Responsiveness
+### :iphone: Responsiveness
 
 ![Responsiveness](/gifs/wallet-responsiveness.gif)
 
   The app is responsive across all resolutions, thanks to Material UI's Grid system.
 
-## Português
+## :brazil: Português
 
-### Informações do projeto
+### :desktop_computer: Link do deploy
+
+[https://rodrigomarchisilva.github.io/trybe-wallet/](https://rodrigomarchisilva.github.io/trybe-wallet/)
+
+### :motorway: Rotas
+
+> HashRouter foi utilizado por limitações do GitHub Pages.
+
+- `/` - Página de login;
+- `/#/carteira` - Página da carteira.
+
+### :deciduous_tree: Ambiente de desenvolvimento
+
+| Ferramenta | Versão |
+| ----------- | ------- |
+| [Node](https://nodejs.org/en/) | 18.8.0 |
+| [Docker](https://www.docker.com/) | 20.10.12 |
+| [Docker Compose](https://docs.docker.com/compose/) | 1.29.2 |
+
+### :information_source: Informações do projeto
 
 * **Por que eu fiz esse projeto:** Esse projeto é do curso da [Trybe](https://www.betrybe.com/), Módulo 2 - Desenvolvimento Front-end;
 * **Tecnologias principais:** React (c/ componentes de classe), Redux, Material UI;
@@ -194,7 +218,7 @@
 * **Minha abordagem para aprender através de projetos:** Quando faço algo pela primeira vez, tento não usar referências externas, como Stack Overflow, designs prontos e assim por diante. Eu só uso quando estou emperrado e não consigo encontrar uma solução sozinho. Acredito que o uso dessa prática ao estudar, aumenta minha criatividade. É por isso que alguns dos meus projetos podem não seguir padrões estabelecidos de código e design;
 * **Histórico de commits:** Pode estar um pouco bagunçado ou comprometido em alguns projetos, seja porque tive que migrar o projeto para um novo repositório, ou porque ainda estava no processo de aprendizado e não sabia usar o Git direito. Eu ainda estou aprendendo, mas já melhorei muito;
 
-### Clonando o projeto e abrindo no VSCode
+### :printer: Clonando o projeto e abrindo no VSCode
 
   **Pré-requisitos:** Você precisa ter o [Node.js](https://nodejs.org/en/) e o [Git](https://git-scm.com/) instalados no seu computador;
 
@@ -226,7 +250,7 @@
     code .
   ~~~
 
-### Como rodar localmente
+### :computer: Como rodar localmente
 
   **1.** Instale as dependências:
 
@@ -240,7 +264,7 @@
     npm start
   ~~~
 
-### Como rodar através do docker
+### :whale2: Como rodar através do docker
 
   **1.** Certifique-se de ter o Docker instalado e rodando:
 
@@ -264,7 +288,7 @@
     docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm trybe-wallet
   ~~~
 
-### Como rodar através do docker-compose
+### :whale: Como rodar através do docker-compose
 
   **1.** Certifique-se de ter o Docker Compose instalado e rodando:
 
@@ -288,14 +312,14 @@
     npm run compose:down
   ~~~
 
-### Entrar
+### :door: Entrar
 
 ![Login](/gifs/wallet-login.gif)
 
   * **E-mail:** Como não há um banco de dados, qualquer email válido é aceito;
   * **Senha:** A senha deve ter pelo menos 6 dígitos.
 
-### Criar, editar e excluir despesas
+### :man_technologist: Criar, editar e excluir despesas
 
 ![Create, update and delete an expense](/gifs/wallet-cud.gif)
 
@@ -304,7 +328,7 @@
   * **Excluir:** Para excluir uma despesa, você precisa clicar no botão da lixeira;
   * **Taxas de câmbio:** As taxas de câmbio são obtidas através da AwesomeAPI's [Exchange Rates API](https://docs.awesomeapi.com.br/api-de-moedas).
 
-### Responsividade
+### :iphone: Responsividade
 
 ![Responsiveness](/gifs/wallet-responsiveness.gif)
 
