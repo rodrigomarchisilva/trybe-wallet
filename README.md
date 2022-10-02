@@ -40,7 +40,7 @@
 
 > HashRouter has been used because of gh-pages limitations.
 
-- `/` - Login page;
+- `/#/` - Login page;
 - `/#/carteira` - Wallet page.
 
 ### :deciduous_tree: Development environment
@@ -58,8 +58,7 @@
 * **Secondary Technologies:** Docker (w/ compose), ESLint, Prettier;
 * **Description:** This project consists of a wallet, where you can add, edit and delete expenses. It also has a login page with validations. Local storage wasn't used, so the data is lost when the page is refreshed. The reason for this, is that the project's main goal is to practice React and Redux. Forms also come with standard values to make it easier to test the app. I learned Material UI and how to use it with React, just for the sake of learning something new;
 * **How Trybe projects work:** Trybe makes tests and you have to pass them to get your project approved, through GitHub Actions. They tell you what the app should do and you have to make it happen with your own logic and design, often having to use things they didn't teach you yet, to practice your research, problem solving and learning skills. So it's not a copy-paste project, like in most of the courses;
-* **My approach to learning through projects:** I always try to do things for the first time without using external references, e.g. Stack Overflow, ready to use designs and so on. I only use them when I'm stuck and can't find a solution on my own. I believe that doing this when I'm only practicing, increases my creativity. That's why some of my projects might not follow well stablished patterns of code and design;
-* **Commit history:** It might be a bit messy or compromised in some projects, either because I had to migrate the project to a new repository, or because I was still in the learning process and didn't know how to use Git properly. I'm still learning, but I already improved a lot.
+* **Commit history:** It might be a bit messy or cut by half in some projects, either because I had to migrate the project to a new repository and lost the first commits, or because, at the time, I had not yet learned how to use atomic and conventional commits.
 
 ### :printer: Cloning the project and opening it on VSCode
 
@@ -197,7 +196,7 @@
 
 > HashRouter foi utilizado por limitações do GitHub Pages.
 
-- `/` - Página de login;
+- `/#/` - Página de login;
 - `/#/carteira` - Página da carteira.
 
 ### :deciduous_tree: Ambiente de desenvolvimento
@@ -215,8 +214,7 @@
 * **Tecnologias secundárias:** Docker (c/ compose), ESLint, Prettier;
 * **Descrição:** Esse projeto consiste em uma carteira, onde você pode adicionar, editar e deletar despesas. Ele também tem uma página de login com validações. O local storage não foi usado, então os dados são perdidos quando a página é atualizada. A razão para isso, é que o objetivo principal do projeto é praticar React e Redux. Os formulários também vêm com valores padrão para facilitar o teste do app. Eu aprendi Material UI e como usá-lo com React, apenas para aprender algo novo;
 * **Como os projetos da Trybe funcionam:** A Trybe faz testes, validados através do GitHub Actions, e você tem que contemplá-los para ser aprovado no bloco. O README diz o que o app deve fazer e você desenvolve com a sua própria lógica e design, muitas vezes tendo que usar conhecimentos que eles ainda não passaram, para praticar suas habilidades de pesquisa, solução de problemas e aprendizado. Então não é um projeto copia e cola, como na maioria dos cursos;
-* **Minha abordagem para aprender através de projetos:** Quando faço algo pela primeira vez, tento não usar referências externas, como Stack Overflow, designs prontos e assim por diante. Eu só uso quando estou emperrado e não consigo encontrar uma solução sozinho. Acredito que o uso dessa prática ao estudar, aumenta minha criatividade. É por isso que alguns dos meus projetos podem não seguir padrões estabelecidos de código e design;
-* **Histórico de commits:** Pode estar um pouco bagunçado ou comprometido em alguns projetos, seja porque tive que migrar o projeto para um novo repositório, ou porque ainda estava no processo de aprendizado e não sabia usar o Git direito. Eu ainda estou aprendendo, mas já melhorei muito;
+* **Histórico de commits:** Pode estar um pouco bagunçado ou cortado pela metade em alguns projetos, seja porque eu tive que migrar o projeto para um novo repositório e perdi os primeiros commits, ou porque eu ainda não tinha aprendido a usar commits atômicos e convencionais.
 
 ### :printer: Clonando o projeto e abrindo no VSCode
 
